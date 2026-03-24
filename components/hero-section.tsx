@@ -47,8 +47,20 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 text-center">
         <div className="max-w-4xl mx-auto">
+          {/* Logo */}
+          <div className="animate-on-scroll opacity-0 animation-delay-100 mb-8">
+            <Image
+              src="/images/temizel-logo.png"
+              alt="Temizel İnşaat Logo"
+              width={280}
+              height={80}
+              className="h-16 md:h-20 w-auto mx-auto brightness-0 invert"
+              priority
+            />
+          </div>
+
           {/* Badge */}
-          <div className="animate-on-scroll opacity-0 animation-delay-100">
+          <div className="animate-on-scroll opacity-0 animation-delay-150">
             <span className="inline-block px-4 py-2 text-xs font-medium tracking-widest uppercase bg-card/10 backdrop-blur-sm text-card rounded-full border border-card/20 mb-8">
               Güvenle inşa eder, huzurla yaşatır
             </span>
