@@ -54,7 +54,8 @@ export function HeroSection() {
               alt="Temizel İnşaat Logo"
               width={280}
               height={80}
-              className="h-16 md:h-20 w-auto mx-auto brightness-0 invert"
+              className="mx-auto brightness-0 invert"
+              style={{ height: "64px", width: "auto" }}
               priority
             />
           </div>

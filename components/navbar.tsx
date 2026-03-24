@@ -42,9 +42,10 @@ export function Navbar() {
               alt="Temizel İnşaat Logo"
               width={180}
               height={50}
-              className={`h-10 w-auto transition-all duration-300 ${
+              className={`transition-all duration-300 ${
                 isScrolled ? "" : "brightness-0 invert"
               }`}
+              style={{ height: "40px", width: "auto" }}
               priority
             />
           </Link>
