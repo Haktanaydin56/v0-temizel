@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
@@ -35,13 +36,17 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="#anasayfa" className="flex items-center gap-3 group">
-            <div className={`font-serif text-2xl font-bold tracking-tight transition-colors duration-300 ${
-              isScrolled ? "text-foreground" : "text-card"
-            }`}>
-              Temizel
-              <span className="text-accent">.</span>
-            </div>
+          <Link href="#anasayfa" className="flex items-center group">
+            <Image
+              src="/images/temizel-logo.png"
+              alt="Temizel İnşaat Logo"
+              width={180}
+              height={50}
+              className={`h-10 w-auto transition-all duration-300 ${
+                isScrolled ? "" : "brightness-0 invert"
+              }`}
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
